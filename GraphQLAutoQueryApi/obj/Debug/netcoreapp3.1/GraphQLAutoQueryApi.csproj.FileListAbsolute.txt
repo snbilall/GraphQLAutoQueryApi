@@ -1,0 +1,9 @@
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\GraphQLAutoQueryApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\GraphQLAutoQueryApi\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\GraphQLAutoQueryApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\GraphQLAutoQueryApi\obj\Debug\netcoreapp3.1\GraphQLAutoQueryApi.csprojAssemblyReference.cache
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\GraphQLAutoQueryApi\obj\Debug\netcoreapp3.1\GraphQLAutoQueryApi.AssemblyInfoInputs.cache
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\GraphQLAutoQueryApi\obj\Debug\netcoreapp3.1\GraphQLAutoQueryApi.AssemblyInfo.cs
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\GraphQLAutoQueryApi\obj\Debug\netcoreapp3.1\GraphQLAutoQueryApi.RazorTargetAssemblyInfo.cache
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\GraphQLAutoQueryApi\obj\Debug\netcoreapp3.1\staticwebassets\GraphQLAutoQueryApi.StaticWebAssets.Manifest.cache
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\GraphQLAutoQueryApi\obj\Debug\netcoreapp3.1\staticwebassets\GraphQLAutoQueryApi.StaticWebAssets.xml

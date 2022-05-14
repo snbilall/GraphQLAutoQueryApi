@@ -1,0 +1,5 @@
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\DataLayer\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\DataLayer\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csprojAssemblyReference.cache
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.AssemblyInfoInputs.cache
+C:\Users\u05307\Desktop\GraphQLAutoQueryApi\GraphQLAutoQueryApi\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.AssemblyInfo.cs
