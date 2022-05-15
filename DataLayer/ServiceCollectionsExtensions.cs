@@ -8,7 +8,7 @@ namespace DataLayer
     {
         public static void AddDataLayers(this IServiceCollection services, IConfiguration configuration)
         {
-            var businessConnectionString = configuration.GetConnectionString("Business");
+            var businessConnectionString = configuration.GetConnectionString("MainDb");
 
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -18,7 +18,7 @@ namespace DataLayer
                 });
             }, ServiceLifetime.Scoped);
 
-            services.AddScoped<IGenericRepository, GenericRepository>();
+            services.AddScoped<IAppRepository, AppRepository>();
         }
     }
 }
