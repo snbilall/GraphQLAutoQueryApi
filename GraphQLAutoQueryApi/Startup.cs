@@ -29,7 +29,7 @@ namespace GraphQLAutoQueryApi
         {
             services.AddControllers();
             services.AddServices();
-            services.AddDataLayers();
+            services.AddDataLayers(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
