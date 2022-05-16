@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Business.UsualQueryService;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Business
 {
@@ -6,7 +7,7 @@ namespace Business
     {
         public static void AddServices(this IServiceCollection services)
         {
-
+            services.AddScoped<IUsualQueryService, UsualQueryService.UsualQueryService>();
         }
     }
 }

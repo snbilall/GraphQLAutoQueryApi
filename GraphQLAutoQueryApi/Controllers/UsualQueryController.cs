@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 namespace GraphQLAutoQueryApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class UsualQueryController : ControllerBase
     {
         private readonly ILogger<UsualQueryController> _logger;
