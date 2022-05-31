@@ -1,4 +1,21 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using HotChocolate;
+using HotChocolate.AspNetCore;
+using HotChocolate.AspNetCore.Playground;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using GraphQLBusiness;
 
 namespace Business
 {
@@ -6,26 +23,22 @@ namespace Business
     {
         public static void AddGxraphQlServices(this IServiceCollection services)
         {
-            //services
-            //.AddGraphQL(
-            //    (options, provider) =>
-            //    {
-            //        // Load GraphQL Server configurations
-            //        var graphQLOptions = Configuration
-            //            .GetSection("GraphQL")
-            //            .Get<GraphQLOptions>();
-            //        options.ComplexityConfiguration = graphQLOptions.ComplexityConfiguration;
-            //        options.EnableMetrics = graphQLOptions.EnableMetrics;
-            //        // Log errors
-            //        var logger = provider.GetRequiredService<ILogger<Startup>>();
-            //        options.UnhandledExceptionDelegate = ctx =>
-            //            logger.LogError("{Error} occurred", ctx.OriginalException.Message);
-            //    })
-            //// Adds all graph types in the current assembly with a singleton lifetime.
-            //.AddGraphTypes()
-            //// Add GraphQL data loader to reduce the number of calls to our repository. https://graphql-dotnet.github.io/docs/guides/dataloader/
-            //.AddDataLoader()
-            //.AddSystemTextJson();
+            services.AddGraphQLServer()
+                .AddQueryType<Query>();
+        }
+
+        public static void AddGxraphQl(this IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                app.UsePlayground(new PlaygroundOptions
+                {
+                    QueryPath = "/api",
+                    Path = "/playground"
+                });
+            }
+            app.UseGraphQL("/api");
         }
     }
 }
