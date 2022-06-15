@@ -9,7 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace GraphQLAutoQueryApi
+namespace EfQueryApi
 {
     public class Startup
     {

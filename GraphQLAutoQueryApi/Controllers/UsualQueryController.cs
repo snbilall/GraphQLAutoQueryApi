@@ -4,7 +4,7 @@ using Business.UsualQueryService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace GraphQLAutoQueryApi.Controllers
+namespace EfQueryApi.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]

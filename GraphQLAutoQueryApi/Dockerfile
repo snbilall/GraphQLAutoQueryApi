@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["GraphQLAutoQueryApi/GraphQLAutoQueryApi.csproj", "GraphQLAutoQueryApi/"]
-RUN dotnet restore "GraphQLAutoQueryApi/GraphQLAutoQueryApi.csproj"
+COPY ["EfQueryApi/EfQueryApi.csproj", "EfQueryApi/"]
+RUN dotnet restore "EfQueryApi/EfQueryApi.csproj"
 COPY . .
-WORKDIR "/src/GraphQLAutoQueryApi"
-RUN dotnet build "GraphQLAutoQueryApi.csproj" -c Release -o /app/build
+WORKDIR "/src/EfQueryApi"
+RUN dotnet build "EfQueryApi.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "GraphQLAutoQueryApi.csproj" -c Release -o /app/publish
+RUN dotnet publish "EfQueryApi.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "GraphQLAutoQueryApi.dll"]
+ENTRYPOINT ["dotnet", "EfQueryApi.dll"]
